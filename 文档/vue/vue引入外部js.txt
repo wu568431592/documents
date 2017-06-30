@@ -1,0 +1,16 @@
+在index.html引入
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+还需要修改/build/webpack.base.conf.js文件的externals部分
+externals: {
+    'jquery': 'window.$',
+        'vue': 'window.Vue',
+        'vue-router': 'window.VueRouter',
+        'vuex': 'window.Vuex',
+        'fastclick': 'window.FastClick'
+}
+
+作者：Yakima Teng
+链接：https://www.zhihu.com/question/38213423/answer/190371519
+    来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
